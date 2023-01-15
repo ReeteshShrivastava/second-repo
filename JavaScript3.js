@@ -242,14 +242,26 @@ considered it as a string.
 // console.log(name);
 
 //Code 9: Update String using array and third variable. [First Method]
+// var name = "Masai";
+// var arr = [];
+// for(var i = 0; i<name.length; i++){
+//     arr.push(name[i]);
+// }
+// arr[0]="N";
+// var str="";
+// for(var i=0;i<arr.length;i++){
+//     str=str+arr[i];
+// }
+// console.log(str);
+
+//Code 10: Update String using third variable. [Second Method]
 var name = "Masai";
-var arr = [];
-for(var i = 0; i<name.length; i++){
-    arr.push(name[i]);
-}
-arr[0]="N";
-var str="";
-for(var i=0;i<arr.length;i++){
-    str=str+arr[i];
+var str = "";
+for(var i=0;i<name.length;i++){
+    if(i==0){
+        str=str+"N";
+    }else{
+        str=str+name[i];
+    }
 }
 console.log(str);
