@@ -237,6 +237,19 @@ considered it as a string.
 // console.log(name); // Masai
 
 //Code 8: Update Character in array
-var name = ["M","a","s","a","i"];
-name[0] = "N";
-console.log(name);
+// var name = ["M","a","s","a","i"];
+// name[0] = "N";
+// console.log(name);
+
+//Code 9: Update String using array and third variable. [First Method]
+var name = "Masai";
+var arr = [];
+for(var i = 0; i<name.length; i++){
+    arr.push(name[i]);
+}
+arr[0]="N";
+var str="";
+for(var i=0;i<arr.length;i++){
+    str=str+arr[i];
+}
+console.log(str);
